@@ -2,7 +2,7 @@
 # Author = Shane Coufreur
 # Date = December 2021
 
-with open((__file__.rstrip("code.py")+"pyt  input.txt"), 'r') as input_file:
+with open((__file__.rstrip("code.py")+"input.txt"), 'r') as input_file:
     input = input_file.readlines()
     inp = [int(i) for i in input]
 
