@@ -16,18 +16,14 @@ def solve1():
 
     gamma = ""
     for i in range(0, len(input[0].strip())):
-        #print(i)
         for j in input:
-        #    print(j.strip())
             d[str(j.strip()[int(i)])] += 1
         if d["0"] > d["1"]:
             gamma += "0"
         else:
             gamma += "1"
-        #print(d)
         d["0"] = 0
         d["1"] = 0
-    #print("bit" + str(bit))
     g = int(gamma, 2)
 
     epsilon = ""
@@ -39,7 +35,7 @@ def solve1():
     e = int(epsilon, 2)
     return g * e
 
-def solve2():
+def solve_oxygen(input):
     values = input
     oxygen = ""
     for i in range(0, len(values[0].strip())):
@@ -61,6 +57,9 @@ def solve2():
             break
 
     oxygen = values[0]
+    return oxygen
+
+def solve_co(input):
     values = input
     for i in range(0, len(values[0].strip())):
         d = defaultdict(def_val)
@@ -81,6 +80,13 @@ def solve2():
             break
     
     co = values[0]
+    return co
+
+
+def solve2():
+    oxygen = solve_oxygen(input)
+    co = solve_co(input)
     return int(oxygen, 2) * int(co, 2)
+    
 print("Part One : "+ str(solve1()))
 print("Part Two : "+ str(solve2()))
