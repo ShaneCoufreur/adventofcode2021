@@ -27,8 +27,7 @@ def solve1():
         #if forward, increase horizontal
         elif i[0] == "forward":
             d["h"] += i[1]
-    #return ( depth, horizontal, depth * horizontal )
-    return ( (d["d"], d["h"], d["d"]*d["h"]))
+    return (d["d"], d["h"], d["d"]*d["h"])
 
 def solve2():
     #init default dictionary
@@ -49,8 +48,7 @@ def solve2():
         elif i[0] == "forward":
             d["h"] += i[1]
             d["d"] += d["a"] * i[1] 
-    # return ( depth, horizontal, depth * horizontal )
-    return ( (d["d"], d["h"], d["d"]*d["h"]))
+    return (d["d"], d["h"], d["d"]*d["h"])
 
 print("Part One : "+ str(solve1()))
 print("Part Two : "+ str(solve2()))
