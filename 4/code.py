@@ -28,7 +28,6 @@ def solve1():
                         board[i][j] = -1
 
             #check rows
-            rowfound = False
             for i in range(len(board)):
                 if sum(board[i]) == -5:
                     winners.append(board)
@@ -57,19 +56,12 @@ def solve2():
     winners = []
     boards = origboards.copy()
     notyetwon = boards.copy()
-    lastwinner = []
-    lastwinnerfound = False
 
     lastboardtowin = ()
-    #print(notyetwon)
     for draw in draws:
         lastdraw = draw
-        #print("==============================================")
-        #print(draw)
         for indx, board in enumerate(boards):
-            #print("board"+str(indx))
             for i in range(len(board)):
-                #print(board[i])
                 for j in range(len(board[i])):
                     if board[i][j] == draw:
                         board[i][j] = -1
@@ -83,12 +75,10 @@ def solve2():
                             winners.append(board)
                             notyetwon.remove(board)
                             lastboardtowin = (board, draw)
-                        #print("Found row!")
                         rowfound = True
                         break
 
-            #check columns
-            
+            #check columns            
             if rowfound == False:
                 for j in range(len(board)):
                     s = 0
@@ -98,8 +88,7 @@ def solve2():
                             if board in notyetwon:    
                                 winners.append(board)
                                 notyetwon.remove(board)
-                                lastboardtowin = (board, draw)
-                            #print("Found column!")                            
+                                lastboardtowin = (board, draw)                
                             rowfound = True
                             break
 
