@@ -17,14 +17,14 @@ def solve2():
     total_increments = 0
     last_sum = 0
     for ind, i in enumerate(range(2, len(inp))):
-        sum = inp[i-2] + inp[i-1] + inp[i]
+        s = inp[i-2] + inp[i-1] + inp[i]
         
         if ind == 0:
-            last_sum = sum
+            last_sum = s
         else:
-            if sum > last_sum:
+            if s > last_sum:
                 total_increments += 1
-            last_sum = sum
+            last_sum = s
     return total_increments
 
 print("Part One : "+ str(solve1()))
