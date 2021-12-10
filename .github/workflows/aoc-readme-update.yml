@@ -1,7 +1,7 @@
 name: Update README ⭐
 on:
-#  schedule:
-#    - cron: "56 */4 1-25 12 *"                     # Every 4 hours from December 1st untill 25th
+  schedule:
+    - cron: "56 */4 1-25 12 *"                     # Every 4 hours from December 1st untill 25th
   push:
   workflow_dispatch:
 
