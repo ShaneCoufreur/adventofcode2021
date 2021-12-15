@@ -3,9 +3,9 @@ Advent of Code 2021
 
 ![](https://img.shields.io/badge/day%20📅-15-blue)
 
-![](https://img.shields.io/badge/stars%20⭐-26-yellow)
+![](https://img.shields.io/badge/stars%20⭐-29-yellow)
 
-![](https://img.shields.io/badge/days%20completed-13-red)
+![](https://img.shields.io/badge/days%20completed-14-red)
 
 <!--- advent_readme_stars table --->
 ## 2021 Results
@@ -25,4 +25,6 @@ Advent of Code 2021
 | [Day 11](https://adventofcode.com/2021/day/11) | ⭐ | ⭐ |
 | [Day 12](https://adventofcode.com/2021/day/12) | ⭐ | ⭐ |
 | [Day 13](https://adventofcode.com/2021/day/13) | ⭐ | ⭐ |
+| [Day 14](https://adventofcode.com/2021/day/14) | ⭐ | ⭐ |
+| [Day 15](https://adventofcode.com/2021/day/15) | ⭐ |   |
 <!--- advent_readme_stars table --->
